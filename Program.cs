@@ -11,9 +11,13 @@ class Program
         Console.Write("Enter second word: ");
         string second = Console.ReadLine();
 
-        List<char> secondList = second.ToList<char>();
-
         bool canBeDone = true;
+
+        List<char> secondList = new List<char> ();
+        foreach(char c in second)
+        {
+            secondList.Add(c);
+        }
 
         foreach(char c in first)
         {
